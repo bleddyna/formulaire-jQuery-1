@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de formulaire jquery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        legend {
+            background-color: #000;
+            color: #fff;
+            padding: 3px 6px;
+        }
+        button{
+            padding: 10px;
+            border-radius: 7px;
+            border: 1px solid black;
+            color: teal;
+            background-color: wheat;
+        }
+        button:hover{
+            background-color: teal;
+            color:white;
+            border: 1px solid wheat;
+        }
+    </style>
+</head>
+<body>
+    <form id="form-contact">
+        <fieldset>
+        <legend>Bienvenue sur ton formulaire!</legend>
+        <!-- partie nom -->
+        <div class="formContent">
+            <label for="name">Ton nom:</label>
+            <input type="text" name="name" id="name">
+            <label id="nameInfos"></label>
+        </div>
+        <!-- partie mail -->
+        <div class="formContent">
+            <label for="mail">Ton mail:</label>
+            <input type="email" name="mail" id="mail">
+            <label id="mailInfos"></label>
+        </div>
+        <!-- partie message -->
+        <div class="formContent">
+            <label for="message">choses que tu aimerai dire</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <!-- bouton de validation -->
+        <div class="formContent">
+            <button type="submit">envoyer</button>
+        </div>
+    </fieldset>
+    </form>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
